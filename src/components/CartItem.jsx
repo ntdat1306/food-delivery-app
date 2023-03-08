@@ -16,6 +16,7 @@ const CartItem = ({ item }) => {
             type: actionType.SET_CART_ITEMS,
             cartItems: items,
         })
+        console.log("2")
     }
 
     const updateQty = (action, id) => {
@@ -32,7 +33,7 @@ const CartItem = ({ item }) => {
         else {
             // If action = remove, quantity = 1 and user try to click remove => remove item from cart (by using filter to reset cart, print items don't have id like item click)
             if (qty === 1){
-                cartItems.filter(item => item.id !== id)
+                items = cartItems.filter(item => item.id !== id)
                 cartDispatch()
             }
             else {
