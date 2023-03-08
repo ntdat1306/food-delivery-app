@@ -59,6 +59,7 @@ const CreateContainer = () => {
         )
     }
 
+    
     // Delete image
     const deleteImage = () => {
         setIsLoading(true)
