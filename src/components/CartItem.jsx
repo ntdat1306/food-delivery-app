@@ -16,7 +16,6 @@ const CartItem = ({ item }) => {
             type: actionType.SET_CART_ITEMS,
             cartItems: items,
         })
-        console.log("2")
     }
 
     const updateQty = (action, id) => {
